@@ -124,6 +124,7 @@ main {
 }
 
 .c-btn a {
+    margin-right: 10px;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -150,6 +151,7 @@ main {
 .navbar ul li a{
     text-decoration: none;
     color: white;
+    font-size: 12px;
 }
 
 .first-row {
@@ -174,15 +176,25 @@ main {
 }
 
 .album {
-    background-color: azure;
-    height: 200px;
+    /* height: 200px; */
     width: calc(100% / 6 - 10px);
+}
+
+.album img {
+    width: 100%;
 }
 
 .third-row .row .album{
     margin-right: 10px;
-    height: 130px;
+    /* height: 130px; */
     border-radius: 50%;
+}
+
+.third-row .row .album img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .second-row .row .album{
@@ -191,6 +203,21 @@ main {
 
 .album {
     margin: 20px 0;
+}
+
+.desc span {
+    display: block;
+    text-align: center;
+}
+
+.desc .title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
 }
 /* FOOTER */
 
