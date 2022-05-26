@@ -15,7 +15,7 @@ body {
 
 nav {
     padding: 0 20px;
-    width: 20%;
+    width: 200px;
     height: calc(100vh - 90px);
     background-color: black;
     color: white;
@@ -55,7 +55,7 @@ nav ul li{
 .playlist {
     padding-top: 15px;
     width: 100%;
-    height: 74%;
+    height: 70%;
 }
 
 .playlist #add {
@@ -105,9 +105,12 @@ nav ul li{
 }
 
 /* MAIN */
-
 main {
-    width: 80%;
+    width: 100%;
+    display: flex;
+}
+.main-container {
+    width: calc(100% - 200px);
     height: calc(100vh - 90px);
     background-color: #141922;
     overflow: auto;
@@ -298,6 +301,8 @@ footer {
     color: white;
 }
 
+
+
 @media screen and (max-width: 1100px) {
     .row {
         flex-wrap: wrap;
@@ -305,4 +310,12 @@ footer {
     .album {
         width: calc(100% / 4 - 10px);
     }
+
+}
+
+@media screen and (max-width: 700px) {
+    .album {
+        width: calc(100% / 2 - 10px);
+    }
+
 }
