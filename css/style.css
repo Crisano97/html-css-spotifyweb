@@ -16,7 +16,7 @@ body {
 nav {
     padding: 0 20px;
     width: 20%;
-    height: 90vh;
+    height: calc(100vh - 90px);
     background-color: black;
     color: white;
 }
@@ -34,7 +34,7 @@ nav ul li{
 .logo {
     /* text-align: center; */
     width: 100%;  
-    height: 10%; 
+    height: 80px;
 }
 
 .logo img {
@@ -44,6 +44,12 @@ nav ul li{
 
 .page-int {
     width: 100%  
+}
+
+.page-int ul li img {
+    width: 15%;
+    vertical-align: middle;
+    opacity: 0.5;
 }
 
 .playlist {
@@ -102,7 +108,7 @@ nav ul li{
 
 main {
     width: 80%;
-    height: 90vh;
+    height: calc(100vh - 90px);
     background-color: #141922;
     overflow: auto;
     color: white;
@@ -118,7 +124,7 @@ main {
     align-items: center;
     position: sticky;
     top: 0;
-    height: 10%;
+    height: 80px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -145,13 +151,13 @@ main {
 
 .navbar ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .navbar ul li a{
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .first-row {
@@ -164,7 +170,7 @@ main {
 
 .first-row .row {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .second-row .row {
@@ -176,8 +182,8 @@ main {
 }
 
 .album {
-    /* height: 200px; */
     width: calc(100% / 6 - 10px);
+    margin: 20px 5px;
 }
 
 .album img {
@@ -185,8 +191,6 @@ main {
 }
 
 .third-row .row .album{
-    margin-right: 10px;
-    /* height: 130px; */
     border-radius: 50%;
 }
 
@@ -198,10 +202,6 @@ main {
 
 .second-row .row .album{
     margin-right: 10px;
-}
-
-.album {
-    margin: 20px 0;
 }
 
 .desc span {
@@ -221,8 +221,9 @@ main {
 /* FOOTER */
 
 footer {
+    z-index: 1;
     width: 100%;
-    height: 10vh;
+    height: 90px;
     background-color: #2e2e2e;
     display: flex;
     justify-content: space-between;
@@ -281,7 +282,9 @@ footer {
     text-align: center;
     width: 35%;
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .pl-bar {
@@ -293,4 +296,13 @@ footer {
 .pl-bar span{
     font-size: 12px;
     color: white;
+}
+
+@media screen and (max-width: 1100px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .album {
+        width: calc(100% / 4 - 10px);
+    }
 }
