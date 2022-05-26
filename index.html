@@ -19,29 +19,33 @@
 
     <main>
         <nav>
-            <div class="logo">
-                <img src="./img/logo.svg" alt="">
+            <div class="container-top">
+                <div class="logo">
+                    <img class="big-logo disap" src="./img/logo.svg" alt="">
+                    <img class="little-logo" src="./img/logo-small.svg" alt="">
+                </div>
+                <div class="page-int">
+                    <ul>
+                        <li>
+                            <img src="./img/home.svg" alt="">
+                            <span class="disap">Home</span>
+                        </li>
+                        <li>
+                            <img src="./img/search.svg" alt="">
+                            <span class="disap">Cerca</span>
+                        </li>
+                        <li>
+                            <img src="./img/libreria.svg" alt="">
+                            <span class="disap">La tua libreria</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="page-int">
-                <ul>
-                    <li>
-                        <img src="./img/home.svg" alt="">
-                        Home
-                    </li>
-                    <li>
-                        <img src="./img/search.svg" alt="">
-                        Cerca
-                    </li>
-                    <li>
-                        <img src="./img/libreria.svg" alt="">
-                        La tua libreria
-                    </li>
-                </ul>
-            </div>
-            <div class="playlist">
+            <div class="playlist disap">
                 <h5>PLAYLIST</h5>
+                <span id="add">Crea Playlist</span>
+
                 <ul>
-                    <li id="add">Crea Playlist</li>
                     <li>Nuova Playlist</li>
                     <li>Nuova Playlist</li>
                     <li>Nuova Playlist</li>
@@ -52,11 +56,15 @@
                 </ul>
             </div>
             <div class="suggest">
-                <span id="app">intsalla app</span>
+                <span id="app">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <span class="disap">intsalla app</span>
+                </span>
+                <div class="line"></div>
                 <div id="user">
                     <img src="./img/profile.svg" alt="">
                 </div>
-                <span> John Doe</span>
+                <span class="disap"> John Doe</span>
             </div>
         </nav>
 
