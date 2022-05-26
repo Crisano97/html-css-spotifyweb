@@ -180,6 +180,7 @@ main {
 }
 
 .c-btn {
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -337,6 +338,7 @@ footer {
 }
 
 .song span {
+    width: fit-content;
     display: block;
 }
 
