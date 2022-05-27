@@ -37,9 +37,7 @@ nav ul li{
 }
 
 .logo {
-    /* text-align: center; */
     width: 100%;  
-    /* height: 80px; */
 }
 
 .logo .big-logo {
@@ -60,7 +58,6 @@ nav ul li{
 .page-int ul li img {
     width: 20px;
     vertical-align: middle;
-    /* opacity: 0.7; */
 }
 
 .page-int ul li:first-child {
@@ -71,7 +68,7 @@ nav ul li{
     padding-top: 15px;
     width: 100%;
     height: 70%;
-    min-height: 180px;
+    min-height: 130px;
 }
 
 .playlist #add {
@@ -95,19 +92,16 @@ nav ul li{
 }
 
 .suggest {
+    z-index: 1;
     background-color: black;
     width: 100%;
-    /* height: 5%; */
     font-size: 14px;
     margin: 20px 0;
-    /* padding: 20px 0; */
 }
 
 .suggest #app {
     opacity: 0.7;
-    /* color: rgba(255, 255, 255, 0.5); */
     font-size: 12px;
-    /* border-bottom: 1px solid; */
     display: block;
     margin-bottom: 5px;
 }
@@ -162,7 +156,7 @@ nav ul li{
     border-radius: 50%;
 }
 
-/* MAIN */
+/* MAIN CONTAINER*/
 main {
     width: 100%;
     display: flex;
@@ -177,6 +171,7 @@ main {
 
 .container{
     margin: 20px;
+    padding-top: 75px;
 }
 
 .c-btn {
@@ -184,10 +179,11 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
     height: 80px;
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -202,7 +198,7 @@ main {
 }
 
 .c-btn a:hover {
-    font-size: 12px;
+    transform: scale(1.1);
 }
 
 .navbar {
@@ -236,7 +232,6 @@ main {
 
 .first-row .row {
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .second-row .row {
@@ -257,7 +252,7 @@ main {
     position: absolute;
     top: 0;
     width: 100%;
-    height: calc(100% - 33px);
+    height: calc(100% - 84px);
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.522);
 }
@@ -293,12 +288,16 @@ main {
 }
 
 .second-row .row .album{
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.desc {
+    height: 75px;
 }
 
 .desc span {
     display: block;
-    text-align: center;
+    text-align: center;margin-top: 5px;
 }
 
 .desc .title {
@@ -377,16 +376,16 @@ footer {
 .center .interaction i{
     color: white;
     font-size: 15px;  
-    margin: 10px 10px;  
+    margin: 0 5px;  
 }
 
 .center .interaction .fa-circle-play {
     font-size: 30px;
     vertical-align: middle;
+    margin: 5px 10px;
 }
 
 .center .interaction .fa-circle-play:hover {
-    /* font-size: 40px; */
     transform: scale(1.1);
 }
 
@@ -425,7 +424,7 @@ footer {
 
 .center {
     text-align: center;
-    width: 35%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -474,9 +473,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    /* .big-logo {
-        display: none;
-    } */
 
     .disap {
         display: none;
@@ -503,9 +499,17 @@ footer {
 
     .main-container {
         width: 90%;
-    }    
+    }   
+    
+    .c-btn {
+    width: 90%;
+    }
 
     .suggest {
         text-align: center;
+    }
+
+    footer .center {
+        width: 40%;
     }
 }
